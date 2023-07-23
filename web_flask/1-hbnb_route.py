@@ -1,22 +1,27 @@
 #!/usr/bin/python3
 """
-starts a Flask web application
+flask model for route
 """
-
 from flask import Flask
+
+
 app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def index():
-    """returns Hello HBNB!"""
+def hbnb():
+    """
+        route home
+    """
     return 'Hello HBNB!'
 
 
 @app.route('/hbnb', strict_slashes=False)
-def hbnb():
-    """returns HBNB"""
+def index():
+    """
+        /hbnb page
+    """
     return 'HBNB'
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='5000')
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)

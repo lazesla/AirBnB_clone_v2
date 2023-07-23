@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """ holds class State"""
 import models
+from models import storage
+from models.state import State
+from models.city import City
 from models.base_model import BaseModel, Base
 from models.city import City
 from os import getenv
